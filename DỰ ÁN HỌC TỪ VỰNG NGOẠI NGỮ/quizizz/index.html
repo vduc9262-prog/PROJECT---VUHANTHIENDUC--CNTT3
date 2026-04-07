@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quizzz</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+  <header>
+    <div class="start">
+        <a href="../homepage/index.html"><b>VocabApp</b></a>
+          <a>Dashboard</a>
+        <a  href="../managent vocab caterios/index.html">Categories</a>
+        <a href="../managent vocab word/index.html">Vocabulary</a>
+        <a href="../flash card/index.html">Flashcards</a>
+        <a >Quiz</a>
+    </div>
+    
+    <button class="logout">Logout</button>
+
+  </header>
+
+ <div class="main">
+
+
+  <div class="lesson">
+    <h2 class="quiz">Vocabulary Quizz</h2>
+
+    <button class="Add" id="btn-add">Start quizz</button>
+</div>
+
+<div>
+    <select name="" id=""class="title">
+  
+    <option value="Con vật">Con vật</option>
+    <option value="Cây cối">Cây cối</option>
+</select><br>
+
+
+</div>
+
+<div id="QuizOne" style="display: none;">
+
+<div class="pro">
+  <div class="hourse">
+<p>Progress</p>
+<p class="number">1/2</p></div>
+
+<progress value="50" max="100"></progress>
+</div>
+
+<div class="quiz-card">
+    <h2 class="question">What is the meaning of "Cat"?</h2>
+    
+    <div class="options">
+      <div class="option" id = "true" >mèo</div>
+      <div class="option" id = "false">cún</div>   <!-- đang chọn sai -->
+      <!-- Nếu muốn đánh dấu đúng thì dùng class="option correct" -->
+    </div>
+
+    <div class="buttons">
+      <button class="btn-prev" >Previous</button>
+      <button class="btn-next" id="Next">Next</button>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div id="QuizTwo"style="display: none;">
+
+ <div class="pro">
+  <div class="hourse">
+<p>Progress</p>
+<p class="number">2/2</p></div>
+
+<progress value="100" max="100"></progress>
+</div>
+
+<div class="quiz-card" >
+    <h2 class="question">What is the meaning of "Dog"?</h2>
+    
+    <div class="options">
+      <div class="option" >mèo</div>
+      <div class="option">cún</div>   
+     
+    </div>
+
+    <div class="buttons">
+      <button class="btn-prev" id="Previous">Previous</button>
+      <button class="btn-next">Next</button>
+    </div>
+  </div>
+
+</div>
+
+
+<h3>Quiz History</h3>
+
+<div class="history">
+    <p>DATE</p>
+    <p>CATEGORY</p>
+    <p>SCORE</p>
+</div>
+
+
+
+</div>
+
+
+
+
+     <!-- Popup Logout -->
+<div id="logoutPopup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+        <div class="popup-content">
+          
+            <h2>Đăng xuất</h2>
+            <p>Bạn có chắc chắn muốn đăng xuất khỏi tài khoản không?</p>
+            
+            <div class="popup-buttons">
+                <button id="cancelLogout" class="btn-cancel">Hủy</button>
+                <button id="confirmLogout" class="btn-logout">Đăng xuất</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Popup Chưa có tài khoản -->
+<div id="noAccountPopup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+        <div class="popup-content">
+           
+            <h2>Chưa có tài khoản</h2>
+            <p>Bạn cần đăng nhập để sử dụng tính năng này.</p>
+            
+            <div class="popup-buttons">
+                <button id="cancelNoAccount" class="btn-cancel">Hủy</button>
+                <button id="goToLogin" class="btn-primary">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+     <p>© 2024 VocabApp. All rights reserved</p>
+</footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

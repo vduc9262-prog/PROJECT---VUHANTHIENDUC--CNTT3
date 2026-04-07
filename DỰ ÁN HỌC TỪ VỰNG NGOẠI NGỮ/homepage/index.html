@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trang chủ </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        
+        <div class="Words">
+        <a><b>Vocabulary</b></a>
+        <a>Dashboard</a>
+        <a class="linkweb" href="../managent vocab caterios/index.html">Categories</a>
+        <a class="linkweb" href="../managent vocab word/index.html">Vocabulary</a>
+        <a class="linkweb" href="../flash card/index.html">Flashcards</a>
+        <a class="linkweb" href="../quizizz/index.html">Quiz</a>
+
+</div>
+        <button class="logout" id="logout"> Logout </button>
+
+    </div>
+
+    <div class="main" >
+        <div class="title">
+      <h1>Welcome to VocabApp</h1>
+      <p>Learn and practice vocabulary with flashcards and quizzes</p>
+
+      <div class="link">
+      <a href="" class="linkOne">Get Started</a>
+      <a href="/DỰ ÁN HỌC TỪ VỰNG NGOẠI NGỮ/register and login/register.html" class="linkTwo">Create Account</a></div>
+     </div>
+    </div>
+
+
+     <!-- Popup Logout -->
+<div id="logoutPopup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+        <div class="popup-content">
+          
+            <h2>Đăng xuất</h2>
+            <p>Bạn có chắc chắn muốn đăng xuất khỏi tài khoản không?</p>
+            
+            <div class="popup-buttons">
+                <button id="cancelLogout" class="btn-cancel">Hủy</button>
+                <button id="confirmLogout" class="btn-logout">Đăng xuất</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Popup Chưa có tài khoản -->
+<div id="noAccountPopup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+        <div class="popup-content">
+           
+            <h2>Chưa có tài khoản</h2>
+            <p>Bạn cần đăng nhập để sử dụng tính năng này.</p>
+            
+            <div class="popup-buttons">
+                <button id="cancelNoAccount" class="btn-cancel">Hủy</button>
+                <button id="goToLogin" class="btn-primary">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <footer>
+        <p>© 2024 VocabApp. All rights reserved</p>
+    </footer>
+
+
+
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
