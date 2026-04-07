@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+      <header>
+    <div class="start">
+        <a href="../homepage/index.html"><b>VocabApp</b></a>
+        <a>Dashboard</a>
+        <a >Categories</a>
+        <a href="../managent vocab word/index.html">Vocabulary</a>
+        <a href="../flash card/index.html">Flashcards</a>
+        <a href="../quizizz/index.html">Quiz</a>
+    </div>
+    
+    <button class="logout">Logout</button>
+
+  </header>
+
+
+<div class="container">
+
+    <div class="header">
+      <h2>Flashcard Learning</h2>
+      <select style="padding:8px; border-radius:6px;">
+        <option>Con vật</option>
+        <option>Cây cối</option>
+      </select>
+    </div>
+
+    <div class="flashcard" id="flashcard">
+      <div class="card-inner" id="cardInner">
+
+        <div class="card-front">
+          <div>
+            <div id="frontWord" class="word">Dog</div>
+            <p style="color:#888; margin-top:10px;"></p>
+          </div>
+        </div>
+        <div class="card-back">
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn-prev" onclick="prevCard()"> Trước</button>
+      <button class="btn-flip" onclick="flipCard()">Lật thẻ</button>
+      <button class="btn-learned" onclick="markAsLearned()"> Đã thuộc</button>
+      <button class="btn-next" onclick="nextCard()">Sau </button>
+    </div>
+
+    <div class="progress">
+      <span id="progressText">1 / 6</span>
+      <div style="height:8px; background:#eee; border-radius:4px; margin-top:8px;">
+        <div id="progressBar" class="progress-bar" style="width:33%"></div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Từ</th>
+          <th>Nghĩa</th>
+          <th>Trạng thái</th>
+        </tr>
+      </thead>
+      <tbody id="wordList"></tbody>
+    </table>
+
+</div>
+
+<footer>
+     <p>© 2024 VocabApp. All rights reserved</p>
+</footer>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
