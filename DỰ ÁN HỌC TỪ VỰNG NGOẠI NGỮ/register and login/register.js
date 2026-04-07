@@ -99,20 +99,18 @@ buttonAdd.addEventListener("click", (e) =>{
        return;
     }
    
-     //đúng định dạng email
-    //dùng includes() để check xem mọt chuỗi có chứa đoạn ký tự đó ko(trả về true nếu chứa)
-    //định dạng : abc@gmail.com
+    
 
-    if(!email.value.includes("@")){//nếu như trong email ng dùng nhập ko có @ thì thực hiện
+    if(!email.value.includes("@")){
         errorEmail.innerHTML=`Thiếu dấu @`
         return
     }else{
-        //tách email 
+
         let part = email.value.split("@");
-        if(part.length !== 2){//kiểm tra mặc định chỉ đc 1 dấu @
+        if(part.length !== 2){
             errorEmail.innerHTML=`Chỉ cần 1 dấu @`
             return;
-        }else{ // kiểm tra đoạn trước @
+        }else{ 
             if(part[0] === ""){
                 errorEmail.innerHTML=`thiếu tên trước @. sai định dạng email`
                 return;
