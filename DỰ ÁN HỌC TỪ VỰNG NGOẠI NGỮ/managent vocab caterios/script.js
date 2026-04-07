@@ -241,42 +241,6 @@ let openEdit = (id) => {
 
 
 
-// let deleteModal = document.getElementById("popUpDeleteWord");
-// let deletePo = document.getElementById("PopupdeleteCaterios");
-// let confirmBtn = document.getElementById("confirmDeleteBtn");
-// let closeDe = document.getElementById("closeDeleteBtn");
-// let cancelDele = document.getElementById("cancelDelete");
-
-// const close_2 = () => {
-//     deleteModal.style.display = "none";
-// };
-
-// deletePo.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     deleteModal.style.display = "flex";
-// });
-
-// cancelDele.addEventListener('click', close_2);
-// closeDe.addEventListener('click', close_2);
-
-// let openDelete = (id) => {
-
-//     document.getElementById("popUpDeleteWord").style.display = "flex";
-
-// };
-
-// confirmBtn.addEventListener("click", (id) => {
-
-//     let DeleteADD = items.findIndex((s) => s.id === id);
-//     items.splice(DeleteADD, 1);
-//     SaveData();
-//     RenderItems(items);
-//     deleteModal.style.display = "none";
-
-// });
-
-
-
 let deleteModal = document.getElementById("popUpDeleteWord");
 let confirmBtn = document.getElementById("confirmDeleteBtn");
 let closeDe = document.getElementById("closeDeleteBtn");
