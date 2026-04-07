@@ -145,7 +145,7 @@ input{
 progress {
   width: 1370px;
   height: 20px;
-  accent-color: #2664c9;   /* màu thanh progress */
+  accent-color: #2664c9;
 }
 
 
@@ -245,11 +245,6 @@ h3{
 
    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
-
-
-
-
 
 
 
